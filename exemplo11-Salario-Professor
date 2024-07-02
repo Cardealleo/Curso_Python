@@ -1,0 +1,25 @@
+import os
+os.system ("cls")
+
+print ("CALCULAR SALARIO PROFESSOR")
+
+nivelprof = int(input("Digite o nivel do professor: "))
+aulasprof = int(input("Digite o numero de aulas do professor: "))
+
+
+if nivelprof == 1:
+    salario = aulasprof * 12
+    print ("o Salario do professor é de : ", salario)
+    
+elif nivelprof ==2:
+    salario = aulasprof * 17
+    print ("o Salario do professor é de : ", salario)
+    
+elif nivelprof == 3:
+    salario = aulasprof * 25
+    print ("o Salario do professor é de : ", salario)
+    
+else:
+    print ("Digite um Nivel válido para o professor! ")
+    
+input ("Pressione <ENTER> para continuar...")

@@ -1,0 +1,15 @@
+print ("VALOR MAIOR E MENOR")
+
+valor1 = int(input("Digite o primeiro Valor: "))
+valor2 = int(input("Digite o segundo Valor: "))
+
+if valor1 > valor2:
+    print ("o Valor maior é: ", valor1, "\n O menor valor é: ", valor2)
+
+elif valor2 > valor1:
+    print("o Valor maior é: ", valor2, "\n O menor valor é: ", valor1)
+
+else:
+    print("Os Valores São Iguais!")
+    
+    input ("pressione <ENTER> para continuar...")

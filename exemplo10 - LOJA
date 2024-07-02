@@ -1,0 +1,33 @@
+print ("PROGRAMA LOJA ")
+
+
+#entrada de dados
+descricao = input("Digite a descrição do produto: ")
+quantidade = int(input("Digite a quantidade adquirida: "))
+preco_unitario = float(input("Digite o preço unitário: "))
+
+total = quantidade * preco_unitario
+
+# processamento de dados
+if quantidade <= 5:
+    desconto_percentual = 2
+    
+elif quantidade <= 10:
+    desconto_percentual = 3
+    
+else:
+    desconto_percentual = 5
+
+desconto = total * (desconto_percentual / 100)
+
+#saida de dados
+total_a_pagar = total - desconto
+
+print("\nDescrição do produto: {descricao}")
+print("Quantidade adquirida: {quantidade}")
+print(f"Preço unitário: R${preco_unitario:.2f}")
+print(f"Total (sem desconto): R${total:.2f}")
+print(f"Desconto ({desconto_percentual}%): R${desconto:.2f}")
+print(f"Total a pagar: R${total_a_pagar:.2f}")
+
+input ("Pressione <ENTER> para continuar...")

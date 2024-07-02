@@ -1,0 +1,24 @@
+print ("CALCULADORA SIMPLES")
+
+numero1 = float(input("Digite o Primeiro numero:  "))
+numero2 = float(input("Digite o Segundo numero:  "))
+
+operador = input ("Digite a Operação que quer Realizar:\n + (para somar) \n - (para dimunir) \n * (para multiplicar) \n / (para dividir) \n")
+
+if operador == "+":
+    resultado = numero1 + numero2
+    print("O Resultado da sua soma é: ", resultado)
+    
+elif operador == "-":
+    resultado = numero1 - numero2
+    print("O Resultado da sua subtração é: ", resultado)
+    
+elif operador == "*":
+    resultado = numero1 * numero2
+    print("O Resultado da sua multiplicação é: ", resultado)
+    
+elif operador == "/":
+    resultado = numero1 / numero2
+    print ("O resultado da sua Divisão é: ", resultado)
+
+input ("Pressione <ENTER> para continuar...")
